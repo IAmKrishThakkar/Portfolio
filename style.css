@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #0a192f;
+}
+
+header {
+    background-color: #112240;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #64ffda; /* Maintains the same accent color */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ccd6f6;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #64ffda;
+}
+
+.hero {
+    background: #112240;
+    color: white;
+    padding: 120px 20px 100px;
+    text-align: center;
+    margin-top: 80px;
+    border-bottom: 2px solid #64ffda;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.cta {
+    background-color: #64ffda;
+    color: #0a192f;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #3fbbb8;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about {
+    background-color: #1f2a45;
+    color: #ccd6f6;
+    padding-bottom: 60px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.profile-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #64ffda;
+}
+
+/* Project Section */
+.projects {
+    padding: 80px 20px;
+    background-color: #1f2a45;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #112240;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h3 {
+    color: #64ffda;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #ccd6f6;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #64ffda;
+    color: #0a192f;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #3fbbb8;
+}
+
+/* Button Style */
+.btn {
+    background-color: #64ffda;
+    padding: 14px 35px;
+    color: #0a192f;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #3fbbb8;
+}
+
+/* Responsive Design for Project Cards */
+@media (max-width: 768px) {
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+    }
+}
+
+.contact {
+    background-color: #1f2a45;
+    text-align: center;
+}
+
+.contact a {
+    color: #64ffda;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #0a192f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #8892b0;
+    font-size: 14px;
+}
