@@ -1,88 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Krish Thakkar - Portfolio</title>
-    <link rel="icon" href="assets/logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Background Animation -->
     <div class="background">
-        <img src="assets/bg-animation.svg" alt="Background Animation">
+      <img src="assets/bg-animation.svg" alt="Background Animation" />
     </div>
 
     <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
-            <div class="logo">Krish Thakkar</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="dark-mode-toggle">🌙</button></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">Krish Thakkar</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li></li>
+          <li></li>
+          
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Hey, I'm a <span class="typed"></span></h1>
-            <p>Creative Full-Stack Developer</p>
-            <a href="assets/ThakkarKrishResume.pdf" class="cta"> Download Resume</a>
-        </div>
+        <li><button id="dark-mode-toggle">🌙</button></li>
+      <div class="hero-content">
+        <h1>Hey, I'm a <span class="typed"></span></h1>
+        <p>Creative Full-Stack Developer</p>
+        <a href="assets/ThakkarKrishResume.pdf" class="cta"> Download Resume</a>
+        
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2>👨‍💻 About Me</h2>
-        <div class="about-content">
-            <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img">
-            <p>Passionate full-stack developer crafting beautiful, functional, and interactive web applications.</p>
-        </div>
+      <h2>👨‍💻 About Me</h2>
+      <div class="about-content">
+        <img
+          src="assets/profile.jpg"
+          alt="Profile Picture"
+          class="profile-img"
+        />
+        <p>
+          Passionate full-stack developer crafting beautiful, functional, and
+          interactive web applications.
+        </p>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2>🚀 Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="assets/project1.jpg" alt="Medicine Tracker">
-                <h3>Medicine Tracker</h3>
-                <p>Mobile app for medicine tracking, built with React Native & Firebase.</p>
-                <a href="https://github.com/IAmKrishThakkar/MedicineTracker" target="_blank" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-                <img src="assets/project2.jpg" alt="Attendance App">
-                <h3>Attendance App</h3>
-                <p>School & workplace attendance tracking app using Kotlin & Jetpack Compose.</p>
-                <a href="https://github.com/IAmKrishThakkar/ProjectAndroid" target="_blank" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-                <img src="assets/project3.jpg" alt="Event Horizon">
-                <h3>Event Horizon</h3>
-                <p>An event discovery & management platform. (Ongoing)</p>
-                <a href="https://github.com/IAmKrishThakkar" target="_blank" class="btn">View Project</a>
-            </div>
+      <h2>🚀 Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="assets/project1.jpg" alt="Medicine Tracker" />
+          <h3>Medicine Tracker</h3>
+          <p>
+            Mobile app for medicine tracking, built with React Native &
+            Firebase.
+          </p>
+          <a
+            href="https://github.com/IAmKrishThakkar/MedicineTracker"
+            target="_blank"
+            class="btn"
+            >View Project</a
+          >
         </div>
+        <div class="project-card">
+          <img src="assets/project2.jpg" alt="Attendance App" />
+          <h3>Attendance App</h3>
+          <p>
+            School & workplace attendance tracking app using Kotlin & Jetpack
+            Compose.
+          </p>
+          <a
+            href="https://github.com/IAmKrishThakkar/ProjectAndroid"
+            target="_blank"
+            class="btn"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="assets/project3.jpg" alt="Event Horizon" />
+          <h3>Event Horizon</h3>
+          <p>An event discovery & management platform. (Ongoing)</p>
+          <a
+            href="https://github.com/IAmKrishThakkar"
+            target="_blank"
+            class="btn"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>💻 Skills</h2>
+      <div class="skills-content">
+        <div class="skill-card">
+          <h3>Frontend Development</h3>
+          <ul>
+            <li>React</li>
+            <li>React Native</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Flutter</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Backend Development</h3>
+          <ul>
+            <li>Firebase</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Other Skills</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>API Development</li>
+            <li>Cloud Computing</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>📩 Contact Me</h2>
-        <p>Email: <a href="mailto:kthakkar894@gmail.com">kthakkar894@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/krish-thakkar" target="_blank">Krish Thakkar</a></p>
-        <p>GitHub: <a href="https://github.com/IAmKrishThakkar" target="_blank">IAmKrishThakkar</a></p>
+      <h2>📩 Contact Me</h2>
+      <p>
+        Email: <a href="mailto:kthakkar894@gmail.com">kthakkar894@gmail.com</a>
+      </p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/krish-thakkar" target="_blank"
+          >Krish Thakkar</a
+        >
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/IAmKrishThakkar" target="_blank"
+          >IAmKrishThakkar</a
+        >
+      </p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Krish Thakkar</p>
+      <p>&copy; 2025 Krish Thakkar</p>
     </footer>
-
-</body>
+  </body>
 </html>
