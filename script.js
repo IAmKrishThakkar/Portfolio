@@ -16,7 +16,7 @@ toggleButton.addEventListener('click', () => {
 });
 
 // Typing Effect
-const words = [" Developer", " Creative Coder", " Problem Solver"];
+const words = [" a Developer", " a Creative Coder", " a Problem Solver"];
 let wordIndex = 0;
 let letterIndex = 0;
 const typedSpan = document.querySelector('.typed');
