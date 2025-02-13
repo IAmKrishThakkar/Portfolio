@@ -534,5 +534,5 @@ footer {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 .project-video::cue {
-    display: none; /* Hides captions/subtitles if present */
+    display: none; /* Hides captions/subtitles if present*/
 }
