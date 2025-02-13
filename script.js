@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             tooltip.style.display = "none";
             iframe.src = ""; // Stop iframe from running when hidden
-        }, 200);
+        }, 10000000);
     };
 });
 
