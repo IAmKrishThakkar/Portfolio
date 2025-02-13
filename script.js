@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const iframe = document.getElementById("preview-frame");
 
     window.showPreview = function (event, url) {
-        iframe.src = url; // Load the correct project preview
+        iframe.src = url; // Ensure iframe gets correct URL
         tooltip.style.display = "block";
         tooltip.style.opacity = "1";
         moveTooltip(event);
@@ -57,8 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
         tooltip.style.opacity = "0";
         setTimeout(() => {
             tooltip.style.display = "none";
-            iframe.src = ""; // Stop iframe from running when hidden
-        }, 10000000);
+            iframe.src = "about:blank"; // Prevent continuous loading
+        }, []);
     };
 });
 
