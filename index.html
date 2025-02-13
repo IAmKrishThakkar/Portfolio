@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Thakkar - Portfolio</title>
+    <!-- icon -->
+     <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tech-stack">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1><span class="highlight">Hi, I'm</span> Krish Thakkar</h1>
+                <p>A passionate developer building amazing web-app.</p>
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="assets/ThakkarKrishResume.pdf" class="btn-resume" target="_blank">Download Resume</a>
+            </div>
+            <!-- Github Mail Linkedin -->
+            <div class="social-icons">
+                <a href="mailto:kthakkar894@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/iamkrishthakkar" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krish-thakkar-7726452aa/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <!-- //hero background -->
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="assets/profile.jpg" alt="Krish Thakkar" class="profile-img">
+                <div class="about-text">
+                    <p>
+                      Passionate Frantend developer crafting beautiful, functional, and interactive applications. <br/>
+                      I love building sleek, user-friendly interfaces that bring ideas to life!
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://github.com/iamkrishthakkar" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/krish-thakkar-7726452aa/" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack">
+      <h2>My Tech Stack</h2>
+      <p>I'm proficient in a range of modern technologies that empower me to build highly functional solutions.</p>
+      <div class="stack-grid">
+          <div class="stack-card">
+              <img src="assets/js.svg" alt="JavaScript">
+              <div>
+                  <h3>JavaScript</h3>
+                  <p>Programming Language</p>
+              </div>
+          </div>
+          <div class="stack-card">
+              <img src="assets/reactjs.svg" alt="React">
+              <div>
+                  <h3>React</h3>
+                  <p>JavaScript Library</p>
+              </div>
+          </div>
+          <div class="stack-card">
+              <img src="assets/reactjs.svg" alt="React Native">
+              <div>
+                  <h3>React Native</h3>
+                  <p>Mobile Framework</p>
+              </div>
+          </div>
+          <div class="stack-card">
+              <img src="assets/firebase.svg" alt="Firebase">
+              <div>
+                  <h3>Firebase</h3>
+                  <p>Backend Service</p>
+              </div>
+          </div>
+          <div class="stack-card">
+              <img src="assets/git.svg" alt="Git">
+              <div>
+                  <h3>Git</h3>
+                  <p>Version Control</p>
+              </div>
+          </div>
+          <div class="stack-card">
+              <img src="assets/github.svg" alt="GitHub">
+              <div>
+                  <h3>GitHub</h3>
+                  <p>Code Hosting</p>
+              </div>
+          </div>
+          <div class="stack-card">
+              <img src="assets/java.svg" alt="Java">
+              <div>
+                  <h3>Java</h3>
+                  <p>Programming Language</p>
+              </div>
+          </div>
+          <div class="stack-card">
+              <img src="assets/kotlin.svg" alt="Kotlin">
+              <div>
+                  <h3>Kotlin</h3>
+                  <p>Programming Language</p>
+              </div>
+          </div>
+          <div class="stack-card">
+            <img src="assets/supabase.svg" alt="Supabase">
+            <div>
+                <h3>Supabase</h3>
+                <p>Backend as a Service </p>
+            </div>
+        </div>
+      </div>
+  </section>
+  
+  
+
+    <!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 - PicVerse -->
+            <div class="project-card" 
+                onmouseenter="showPreview(event, 'https://snack.expo.dev/@your-snack-link1')" 
+                onmousemove="moveTooltip(event)" 
+                onmouseleave="hidePreview()">
+                <div class="project-preview">
+                    <img src="assets/project1.jpg" alt="Project 1">
+                </div>
+                <h3>PicVerse</h3>
+                <p>A social media App</p>
+                <div class="tech-stack">
+                    <span>JavaScript</span>
+                    <span>React Native</span>
+                    <span>Supabase</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="picverse.html" class="btn-code"><img src="assets/arrow-up-right-svgrepo-com.svg" /></a>
+                </div>
+            </div>
+
+            <!-- Project 2 - EventHorizon -->
+            <div class="project-card" 
+                onmouseenter="showPreview(event, 'https://snack.expo.dev/@your-snack-link2')" 
+                onmousemove="moveTooltip(event)" 
+                onmouseleave="hidePreview()">
+                <div class="project-preview">
+                    <img src="assets/project3.jpg" alt="Project 2">
+                </div>
+                <h3>EventHorizon</h3>
+                <p>An event discovery & management platform. (Ongoing)</p>
+                <div class="tech-stack">
+                    <span>JavaScript</span>
+                    <span>React Native</span>
+                    <span>Supabase</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="#" class="btn-code"><img src="assets/arrow-up-right-svgrepo-com.svg" /></a>
+                </div>
+            </div>
+
+            <!-- Project 3 - MedicineTracker -->
+            <div class="project-card" 
+                onmouseenter="showPreview(event, 'https://snack.expo.dev/@your-snack-link3')" 
+                onmousemove="moveTooltip(event)" 
+                onmouseleave="hidePreview()">
+                <div class="project-preview">
+                    <img src="assets/project1.jpg" alt="Project 3">
+                </div>
+                <h3>MedicineTracker</h3>
+                <p>A medicine tracker app.</p>
+                <div class="tech-stack">
+                    <span>JavaScript</span>
+                    <span>React Native</span>
+                    <span>Firebase</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/IAmKrishThakkar/MedicineTracker" class="btn-code" target="_blank"><img src="assets/arrow-up-right-svgrepo-com.svg" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Global Tooltip Iframe -->
+<div id="tooltip-iframe">
+    <iframe id="preview-frame" width="300" height="200"></iframe>
+</div>
+
+    
+    <section id="education">
+        <div class="container">           
+            <!-- Education Section -->
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="assets/VNSGU.svg">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <p class="company">Veer Narmad South Gujarat University</p>
+                            <p class="date">2022 - Present</p>
+                            <p class="description">
+                                Learning core concepts of programming, software development, and database management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>&copy; 2023 | All rights reserved. Made by Krish Thakkar.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
