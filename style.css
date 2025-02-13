@@ -526,19 +526,20 @@ footer {
 
 /* Styling the iframe inside the tooltip */
 #tooltip-iframe iframe {
-    width: 400px; /* Set width */
-    height: 250px; /* Set height */
+    width: 400px;
+    height: 250px;
     border-radius: 5px;
-    border: none; /* Remove border */
-    overflow: hidden; /* Hide overflow */
-    scrollbar-width: none; /* Firefox: Hide scrollbar */
-    -ms-overflow-style: none; /* IE/Edge: Hide scrollbar */
+    border: none;
+    overflow: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    display: block; /* Ensures no extra margins */
 }
 
-/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 #tooltip-iframe iframe::-webkit-scrollbar {
-    display: none;
+    display: none; /* Chrome/Safari */
 }
+
 
 .project-video {
     width: 100%;
