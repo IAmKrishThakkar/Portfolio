@@ -1,5 +1,5 @@
-// Smooth Scroll
-document.querySelectorAll('.nav-links a').forEach(anchor => {
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -8,36 +8,57 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     });
 });
 
-// Dark Mode Toggle
-const toggleButton = document.getElementById('dark-mode-toggle');
-toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    toggleButton.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+// Add animations on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
 });
 
-// Typing Effect
-const words = [" Developer", " Creative Coder", " Problem Solver"];
-let wordIndex = 0;
-let letterIndex = 0;
-const typedSpan = document.querySelector('.typed');
+document.querySelectorAll('.skill, .project-card').forEach(el => {
+    observer.observe(el);
+});
 
-function typeText() {
-    if (letterIndex < words[wordIndex].length) {
-        typedSpan.textContent += words[wordIndex][letterIndex++];
-        setTimeout(typeText, 100);
+let lastScrollTop = 0;
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        navbar.style.top = "-70px"; // Adjust based on navbar height
     } else {
-        setTimeout(eraseText, 1500);
+        // Scrolling up
+        navbar.style.top = "0";
     }
-}
 
-function eraseText() {
-    if (letterIndex > 0) {
-        typedSpan.textContent = words[wordIndex].substring(0, letterIndex--);
-        setTimeout(eraseText, 50);
-    } else {
-        wordIndex = (wordIndex + 1) % words.length;
-        setTimeout(typeText, 500);
-    }
-}
+    lastScrollTop = scrollTop;
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const tooltip = document.getElementById("tooltip-iframe");
+    const iframe = document.getElementById("preview-frame");
 
-typeText();
+    window.showPreview = function (event, url) {
+        iframe.src = url; // Load the correct project preview
+        tooltip.style.display = "block";
+        tooltip.style.opacity = "1";
+        moveTooltip(event);
+    };
+
+    window.moveTooltip = function (event) {
+        tooltip.style.left = event.pageX + 15 + "px"; // Slight offset from cursor
+        tooltip.style.top = event.pageY + 15 + "px";
+    };
+
+    window.hidePreview = function () {
+        tooltip.style.opacity = "0";
+        setTimeout(() => {
+            tooltip.style.display = "none";
+            iframe.src = ""; // Stop iframe from running when hidden
+        }, 200);
+    };
+});
+
